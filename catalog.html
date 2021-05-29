@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Котейка</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="anchor-head">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html"><img src="image/logo.png" alt="КОТЕЙКА"></a>
+                    </div>
+                    <div class="header-burger">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="index.html #anchor-about">Почему мы?</a></li>
+                            <li><a href="catalog.html">Номера</a></li>
+                            <li><a href="index.html #anchor-reviews">Отзывы</a></li>
+                            <li><a href="index.html #anchor-adress">Как нас найти</a></li>
+                            <li><a href="index.html #anchor-adress">Контакты</a></li>
+                        </ul>
+                        <div class="contacts">
+                            <a href="tel:+78003335599">8 (800) 333-55-99</a>
+                        <div class="social-burger">
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="icon-fb"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icon-inst"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="icon-vk"></i></a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <section class="section-catalog-rooms">   
+                    <div class="holder-heading"> 
+                        <div class="title-catalog">
+                            <h2>Наши номера</h2>
+                        </div>
+                        <div class="holder-sorting">
+                            <button class="button-sorting"><i class="icon-sorting"></i><span>Фильтры</span></button>
+                            <select  class="select" name="sorting" form="data">
+                                <option value="area-up" class="active-item">&#8593; По Площади</option>
+                                <option value="area-down">&#8595; По Площади</option>
+                                <option value="cost-up">&#8593; По Цене</option>
+                                <option value="cost-down">&#8595; По Цене</option>
+                            </select>
+                        </div>
+                    </div>     
+                    <div class="main-wrapper">
+                        <div class="modal modal-sorting">
+                            <div class="modal-overlay overlay-sorting"></div>
+                            <div class="modal-body">
+                                <div class="sorting-content">
+                                    <i class="icon-close close-sorting"></i>
+                                    <aside>
+                                        <form action="URL" id="data">
+                                            <div class="cost">
+                                                <h5>Цена за сутки,₽</h5>
+                                                <input type="text" name="from" value="От 100">
+                                                <input type="text" name="to" value="До 600">
+                                            </div>
+                                            <div class="area">
+                                                <h5>Площадь</h5>
+                                                <ul>
+                                                    <li><label><input type="checkbox" name="area1" value="a1"><span class="icon-checked">0,63 м2</span></label></li>
+                                                    <li><label><input type="checkbox" name="area2" value="a2"><span class="icon-checked">0,90 м2</span></label></li>
+                                                    <li><label><input type="checkbox" name="area3" value="a3"><span class="icon-checked">1,13 м2</span></label></li>
+                                                    <li><label><input type="checkbox" name="area4" value="a4"><span class="icon-checked">1,56 м2</span></label></li>
+                                                    <li><label><input type="checkbox" name="area5" value="a5"><span class="icon-checked">2,56 м2</span></label></li>
+                                                    <li><label><input type="checkbox" name="area6" value="a6"><span class="icon-checked">2,88 м2</span></label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="equip">
+                                                <h5>Оснащение номера</h5>
+                                                <ul>
+                                                    <li><label><input type="checkbox" name="equip1" value="e1"><span class="icon-checked">Пустой номер</span></label></li>
+                                                    <li><label><input type="checkbox" name="equip2" value="e2"><span class="icon-checked">Лежак</span></label></li>
+                                                    <li><label><input type="checkbox" name="equip3" value="e3"><span class="icon-checked">Когтеточка</span></label></li>
+                                                    <li><label><input type="checkbox" name="equip4" value="e4"><span class="icon-checked">Игровой-комплекс</span></label></li>
+                                                    <li><label><input type="checkbox" name="equip5" value="e5"><span class="icon-checked">Домик</span></label></li>
+                                                </ul>
+                                            </div>
+                                            <div class="form-button">
+                                                <input type="submit" value="Применить">
+                                                <input type="reset" value="Сбросить фильтр">
+                                            </div>
+                                        </form>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <div class="catalog">
+                                <div class="catalog-col">
+                                    <div class="card-item">
+                                        <div class="visual">
+                                            <img src="image/catalog-rooms1.jpg" alt="image description">
+                                        </div>
+                                        <div class="card-text">
+                                            <h4>Эконом</h4>
+                                        <ul>
+                                            <li>Размеры (ШхГхВ) - 90х70х180 см</li>
+                                            <li>Площадь - 0,63 м2</li>
+                                            <li>Оснащение номера
+                                                <i class="icon-equip1"><span class="equip-description1"><span>Пустой номер</span></span></i>
+                                            </li>
+                                            <li>Цена за сутки:<strong>100₽</strong></li>
+                                        </ul>
+                                        <button class="orange button-reserv">
+                                            <span>Забронировать</span><i class="icon-paw"></i>
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-col">
+                                    <div class="card-item">
+                                        <div class="visual">
+                                            <img src="image/catalog-rooms2.jpg" alt="image description">
+                                        </div>
+                                        <div class="card-text">
+                                            <h4>Эконом плюс</h4>
+                                            <ul>
+                                                <li>Размеры (ШхГхВ) - 90х100х180 см</li>
+                                                <li>Площадь - 0,90 м2</li>
+                                                <li>Оснащение номера
+                                                    <i class="icon-equip2"><span class="equip-description2"><span>Лежак</span></span></i>
+                                                    <i class="icon-equip3"><span class="equip-description3"><span>Когтеточка</span></span></i>
+                                                </li>
+                                                <li>Цена за сутки:<strong>200₽</strong></li>
+                                            </ul>
+                                            <button class="orange button-reserv">
+                                                <span>Забронировать</span><i class="icon-paw"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-col">
+                                    <div class="card-item">
+                                        <div class="visual">
+                                            <img src="image/catalog-rooms3.jpg" alt="image description">
+                                        </div>
+                                        <div class="card-text">
+                                            <h4>Комфорт</h4>
+                                        <ul>
+                                            <li>Размеры (ШхГхВ) - 100х125х180 см</li>
+                                            <li>Площадь - 1,13 м2</li>
+                                            <li>Оснащение номера
+                                                <i class="icon-equip2"><span class="equip-description2"><span>Лежак</span></span></i>
+                                                <i class="icon-equip3"><span class="equip-description3"><span>Когтеточка</span></span></i>
+                                                <i class="icon-equip4"><span class="equip-description4"><span>Игровой-комплекс</span></span></i>
+                                            </li>
+                                            <li>Цена за сутки:<strong>250₽</strong></li>
+                                        </ul>
+                                        <button class="orange button-reserv">
+                                            <span>Забронировать</span><i class="icon-paw"></i>
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-col">
+                                    <div class="card-item">
+                                        <div class="visual">
+                                            <img src="image/catalog-rooms4.jpg" alt="image description">
+                                        </div>
+                                        <div class="card-text">
+                                            <h4>Сьют</h4>
+                                        <ul>
+                                            <li>Размеры (ШхГхВ) - 125х125х180 см</li>
+                                            <li>Площадь - 1,56 м2</li>
+                                            <li>Оснащение номера
+                                                <i class="icon-equip2"><span class="equip-description2"><span>Лежак</span></span></i>
+                                                <i class="icon-equip3"><span class="equip-description3"><span>Когтеточка</span></span></i>
+                                                <i class="icon-equip4"><span class="equip-description4"><span>Игровой-комплекс</span></span></i>
+                                            </li>
+                                            <li>Цена за сутки:<strong>350₽</strong></li>
+                                        </ul>
+                                        <button class="orange button-reserv">
+                                            <span>Забронировать</span><i class="icon-paw"></i>
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-col">
+                                    <div class="card-item">
+                                        <div class="visual">
+                                            <img src="image/catalog-rooms5.jpg" alt="image description">
+                                        </div>
+                                       <div class="card-text">
+                                        <h4>Люкс</h4>
+                                        <ul>
+                                            <li>Размеры (ШхГхВ) - 160х160х180 см</li>
+                                            <li>Площадь - 2,56 м2</li>
+                                            <li>Оснащение номера
+                                                <i class="icon-equip2"><span class="equip-description2"><span>Лежак</span></span></i>
+                                                <i class="icon-equip3"><span class="equip-description3"><span>Когтеточка</span></span></i>
+                                                <i class="icon-equip4"><span class="equip-description4"><span>Игровой-комплекс</span></span></i>
+                                                <i class="icon-equip5"><span class="equip-description5"><span>Домик</span></span></i>
+                                            </li>
+                                            <li>Цена за сутки:<strong>500₽</strong></li>
+                                        </ul>
+                                        <button class="orange button-reserv">
+                                            <span>Забронировать</span><i class="icon-paw"></i>
+                                        </button>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="catalog-col">
+                                    <div class="card-item">
+                                        <div class="visual">
+                                            <img src="image/catalog-rooms6.jpg" alt="image description">
+                                        </div>
+                                        <div class="card-text">
+                                            <h4>Супер-Люкс</h4>
+                                        <ul>
+                                            <li>Размеры (ШхГхВ) - 180х160х180 см</li>
+                                            <li>Площадь - 2,88 м2</li>
+                                            <li>Оснащение номера
+                                                <i class="icon-equip2"><span class="equip-description2"><span>Лежак</span></span></i>
+                                                <i class="icon-equip3"><span class="equip-description3"><span>Когтеточка</span></span></i>
+                                                <i class="icon-equip4"><span class="equip-description4"><span>Игровой-комплекс</span></span></i>
+                                                <i class="icon-equip5"><span class="equip-description5"><span>Домик</span></span></i>
+                                            </li>
+                                            <li>Цена за сутки:<strong>600₽</strong></li>
+                                        </ul>
+                                        <button class="orange button-reserv">
+                                            <span>Забронировать</span><i class="icon-paw"></i>
+                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-banner">
+                        <i class="icon-paw-big"></i>
+                        <div class="banner-text">
+                            <h2>Каждый 7-й день<br><strong>бесплатно!</strong></h2>
+                            <p>Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</p>
+                            <button class="white button-reserv">
+                                <span>Забронировать</span><i class="icon-paw"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section id="anchor-adress" class="section-adress">
+                <div class="container">
+                    <address class="holder-adress">
+                        <h2>Как нас найти</h2>
+                        <ul class="list">
+                            <li>
+                                <strong>Адрес</strong>
+                                <p>Санкт-Петербург,<br>
+                                 ул Большая Конюшенная, д 19</p>
+                            </li>
+                            <li>
+                                <strong>Режим работы</strong>
+                                <p>Ежедневно, с 9:00 до 20:00</p>
+                            </li>
+                            <li>
+                                <strong>Телефон</strong>
+                                <a href="tel:+78003335599">8 (800) 333-55-99</a>
+                            </li>
+                            <li>
+                                <strong>E-mail</strong>
+                                <a href="mail:info@cat-hotel.ru">info@cat-hotel.ru</a>
+                            </li>
+                            <li>
+                                <strong>Социальные сети</strong>
+                                <div class="social">
+                                    <ul>
+                                        <li><a href="#" target="_blank"><i class="icon-fb"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="icon-inst"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="icon-vk"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.602667326065!2d30.322106974480818!3d59.93873506407825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1605883176016!5m2!1sru!2sua" width="800" height="600" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </section>
+        </main>
+            <div class="modal modal-reserv">
+                <div class="modal-overlay overlay-reserv"></div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="reserv-content">
+                            <i class="icon-paw"></i>
+                            <i class="icon-close"></i>
+                            <div class="reserv-title">
+                                <h3>Забронировать номер</h3>
+                            </div>
+                            <div class="info">
+                                <input form="data" type="text" name="your-name" placeholder="Ваше имя">
+                                <input form="data" type="text" name="pet-name" placeholder="Имя Питомца">
+                                <input form="data" type="tel" name="tel" placeholder="Телефон">
+                                <input form="data" type="email" name="email" placeholder="E-mail">
+                            </div>
+                            <div class="date">
+                                <p>Дата заезда</p>
+                                <div class="date-items">
+                                    <label>
+                                        <span>c</span>
+                                        <input form="data" type="text" id="date-from" data-format="d-m-Y" data-modal="true" name="date-from" data-lang="ru" data-large-mode="true"  placeholder="mm.dd.yyyy">
+                                    </label>
+                                    <label>
+                                        <span>по</span>
+                                        <!-- data-modal="true" -->
+                                        <input form="data" type="text" id="date-to" data-format="d-m-Y" data-modal="true" name="date-to" data-lang="ru" data-large-mode="true" placeholder="mm.dd.yyyy">
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="orange button-send"><span>Отправить заявку</span><i class="icon-paw"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal-request">
+                <div class="modal-overlay overlay-request"></div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="request-content">
+                            <i class="icon-paw"></i>
+                            <i class="icon-close"></i>
+                            <div class="request-title">
+                                <h3>Спасибо за заявку!</h3>
+                            </div>
+                            <p>Мы свяжемся с вами в ближайшее время</p>
+                            <button class="orange button-ok"><span>Ок</span><i class="icon-paw"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="content-top">
+                        <div class="logo-footer">
+                            <a href="index.html"><img src="image/logo.png" alt="КОТЕЙКА"></a>
+                        </div>
+                        <nav class="nav-footer">
+                            <ul>
+                                <li><a href="index.html #anchor-about">Почему мы?</a></li>
+                                <li><a href="catalog.html">Номера</a></li>
+                                <li><a href="index.html #anchor-reviews">Отзывы</a></li>
+                                <li><a href="index.html #anchor-adress">Как нас найти</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <div class="container">
+                    <div class="content-bot">
+                        <span>2019 Все права защищены</span>
+                        <span>Политика конфиденциальности</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/datedropper.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
